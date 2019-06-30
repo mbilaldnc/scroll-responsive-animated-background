@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scroll Responsive Background Animation</title>
+    <style>
+    body{
+        box-sizing: border-box;
+        margin: 0;
+        font-size: 2em;
+    }
+    #bg-canvas{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    center{
+        padding: 10%;
+    }
+    #background{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: rgb(255, 217, 0);
+        transition: cubic-bezier(0.39, 0, 0.2, 2) 0.5s all;
+    }
+     #form{
+         position: fixed;
+         right: 0;
+         top: 0;
+         padding: 20px 40px;
+         border: 1px solid gray;
+         background-color: rgba(221, 221, 221, 0.925);
+     }
+     .form-input{
+         font-size: 1em;
+         width: 100px;
+     }
+    </style>
+</head>
+<body>
+    <!-- <canvas id="bg-canvas"></canvas> -->
+    <div id="background"></div>
+    <center>
+        <h1>Hey Lorem, ipsum.</h1>
+        <div style="border: 1px solid black; background-color:rgba(219, 219, 219, 0.87);">
+            <h2>made by <a href="https://github.com/mbilaldnc" target="_blank">MBDNC</a></h2>
+            <p><i><u>...scroll responsive animated background with "clip-path" function of css</u></i></p>
+        </div>
+        <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis iure pariatur delectus tenetur placeat accusantium, distinctio cum minima amet impedit.</i></p>
+        <div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis earum tempore impedit. Cumque quos ducimus ipsa veniam quia, perspiciatis, iure quis corrupti minima voluptas accusamus ratione quas voluptatum iste aliquid dolorum natus numquam a? Saepe expedita quis in harum illo provident eos iusto accusantium accusamus necessitatibus! Ipsam fugit doloremque velit odio, explicabo ut, atque soluta voluptatibus earum tenetur itaque illo impedit magnam obcaecati rerum unde saepe modi provident placeat! Debitis, asperiores quae! Porro, possimus voluptatibus adipisci iusto unde suscipit incidunt eius ex, voluptates pariatur consequatur sint totam quia necessitatibus dolores vero autem molestias tenetur recusandae quidem ducimus, quos omnis exercitationem quis. Quo consequuntur voluptatem esse, eum corrupti vitae nostrum quibusdam neque quam dolorum nobis suscipit laborum, architecto libero sed repellendus alias repudiandae! Voluptas autem aliquam laboriosam cum minima explicabo ex molestiae tenetur fuga dolore deleniti magni, voluptatibus possimus. Officiis vel labore, quisquam dicta nulla molestias vitae aut voluptas hic tenetur veniam expedita pariatur amet debitis ipsam libero, nostrum beatae aspernatur recusandae earum. A officiis suscipit doloribus iure pariatur fugit asperiores tempore impedit provident inventore, voluptate, temporibus eum. Optio, provident? Vel libero expedita, atque ex neque eveniet iste, autem illum, deleniti iure quod unde amet et eius nisi. Veritatis, cum. Vero?
+            </p>
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis earum tempore impedit. Cumque quos ducimus ipsa veniam quia, perspiciatis, iure quis corrupti minima voluptas accusamus ratione quas voluptatum iste aliquid dolorum natus numquam a? Saepe expedita quis in harum illo provident eos iusto accusantium accusamus necessitatibus! Ipsam fugit doloremque velit odio, explicabo ut, atque soluta voluptatibus earum tenetur itaque illo impedit magnam obcaecati rerum unde saepe modi provident placeat! Debitis, asperiores quae! Porro, possimus voluptatibus adipisci iusto unde suscipit incidunt eius ex, voluptates pariatur consequatur sint totam quia necessitatibus dolores vero autem molestias tenetur recusandae quidem ducimus, quos omnis exercitationem quis. Quo consequuntur voluptatem esse, eum corrupti vitae nostrum quibusdam neque quam dolorum nobis suscipit laborum, architecto libero sed repellendus alias repudiandae! Voluptas autem aliquam laboriosam cum minima explicabo ex molestiae tenetur fuga dolore deleniti magni, voluptatibus possimus. Officiis vel labore, quisquam dicta nulla molestias vitae aut voluptas hic tenetur veniam expedita pariatur amet debitis ipsam libero, nostrum beatae aspernatur recusandae earum. A officiis suscipit doloribus iure pariatur fugit asperiores tempore impedit provident inventore, voluptate, temporibus eum. Optio, provident? Vel libero expedita, atque ex neque eveniet iste, autem illum, deleniti iure quod unde amet et eius nisi. Veritatis, cum. Vero?
+            </p>
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis earum tempore impedit. Cumque quos ducimus ipsa veniam quia, perspiciatis, iure quis corrupti minima voluptas accusamus ratione quas voluptatum iste aliquid dolorum natus numquam a? Saepe expedita quis in harum illo provident eos iusto accusantium accusamus necessitatibus! Ipsam fugit doloremque velit odio, explicabo ut, atque soluta voluptatibus earum tenetur itaque illo impedit magnam obcaecati rerum unde saepe modi provident placeat! Debitis, asperiores quae! Porro, possimus voluptatibus adipisci iusto unde suscipit incidunt eius ex, voluptates pariatur consequatur sint totam quia necessitatibus dolores vero autem molestias tenetur recusandae quidem ducimus, quos omnis exercitationem quis. Quo consequuntur voluptatem esse, eum corrupti vitae nostrum quibusdam neque quam dolorum nobis suscipit laborum, architecto libero sed repellendus alias repudiandae! Voluptas autem aliquam laboriosam cum minima explicabo ex molestiae tenetur fuga dolore deleniti magni, voluptatibus possimus. Officiis vel labore, quisquam dicta nulla molestias vitae aut voluptas hic tenetur veniam expedita pariatur amet debitis ipsam libero, nostrum beatae aspernatur recusandae earum. A officiis suscipit doloribus iure pariatur fugit asperiores tempore impedit provident inventore, voluptate, temporibus eum. Optio, provident? Vel libero expedita, atque ex neque eveniet iste, autem illum, deleniti iure quod unde amet et eius nisi. Veritatis, cum. Vero?
+            </p>
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis earum tempore impedit. Cumque quos ducimus ipsa veniam quia, perspiciatis, iure quis corrupti minima voluptas accusamus ratione quas voluptatum iste aliquid dolorum natus numquam a? Saepe expedita quis in harum illo provident eos iusto accusantium accusamus necessitatibus! Ipsam fugit doloremque velit odio, explicabo ut, atque soluta voluptatibus earum tenetur itaque illo impedit magnam obcaecati rerum unde saepe modi provident placeat! Debitis, asperiores quae! Porro, possimus voluptatibus adipisci iusto unde suscipit incidunt eius ex, voluptates pariatur consequatur sint totam quia necessitatibus dolores vero autem molestias tenetur recusandae quidem ducimus, quos omnis exercitationem quis. Quo consequuntur voluptatem esse, eum corrupti vitae nostrum quibusdam neque quam dolorum nobis suscipit laborum, architecto libero sed repellendus alias repudiandae! Voluptas autem aliquam laboriosam cum minima explicabo ex molestiae tenetur fuga dolore deleniti magni, voluptatibus possimus. Officiis vel labore, quisquam dicta nulla molestias vitae aut voluptas hic tenetur veniam expedita pariatur amet debitis ipsam libero, nostrum beatae aspernatur recusandae earum. A officiis suscipit doloribus iure pariatur fugit asperiores tempore impedit provident inventore, voluptate, temporibus eum. Optio, provident? Vel libero expedita, atque ex neque eveniet iste, autem illum, deleniti iure quod unde amet et eius nisi. Veritatis, cum. Vero?
+            </p>
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis earum tempore impedit. Cumque quos ducimus ipsa veniam quia, perspiciatis, iure quis corrupti minima voluptas accusamus ratione quas voluptatum iste aliquid dolorum natus numquam a? Saepe expedita quis in harum illo provident eos iusto accusantium accusamus necessitatibus! Ipsam fugit doloremque velit odio, explicabo ut, atque soluta voluptatibus earum tenetur itaque illo impedit magnam obcaecati rerum unde saepe modi provident placeat! Debitis, asperiores quae! Porro, possimus voluptatibus adipisci iusto unde suscipit incidunt eius ex, voluptates pariatur consequatur sint totam quia necessitatibus dolores vero autem molestias tenetur recusandae quidem ducimus, quos omnis exercitationem quis. Quo consequuntur voluptatem esse, eum corrupti vitae nostrum quibusdam neque quam dolorum nobis suscipit laborum, architecto libero sed repellendus alias repudiandae! Voluptas autem aliquam laboriosam cum minima explicabo ex molestiae tenetur fuga dolore deleniti magni, voluptatibus possimus. Officiis vel labore, quisquam dicta nulla molestias vitae aut voluptas hic tenetur veniam expedita pariatur amet debitis ipsam libero, nostrum beatae aspernatur recusandae earum. A officiis suscipit doloribus iure pariatur fugit asperiores tempore impedit provident inventore, voluptate, temporibus eum. Optio, provident? Vel libero expedita, atque ex neque eveniet iste, autem illum, deleniti iure quod unde amet et eius nisi. Veritatis, cum. Vero?
+            </p>
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis earum tempore impedit. Cumque quos ducimus ipsa veniam quia, perspiciatis, iure quis corrupti minima voluptas accusamus ratione quas voluptatum iste aliquid dolorum natus numquam a? Saepe expedita quis in harum illo provident eos iusto accusantium accusamus necessitatibus! Ipsam fugit doloremque velit odio, explicabo ut, atque soluta voluptatibus earum tenetur itaque illo impedit magnam obcaecati rerum unde saepe modi provident placeat! Debitis, asperiores quae! Porro, possimus voluptatibus adipisci iusto unde suscipit incidunt eius ex, voluptates pariatur consequatur sint totam quia necessitatibus dolores vero autem molestias tenetur recusandae quidem ducimus, quos omnis exercitationem quis. Quo consequuntur voluptatem esse, eum corrupti vitae nostrum quibusdam neque quam dolorum nobis suscipit laborum, architecto libero sed repellendus alias repudiandae! Voluptas autem aliquam laboriosam cum minima explicabo ex molestiae tenetur fuga dolore deleniti magni, voluptatibus possimus. Officiis vel labore, quisquam dicta nulla molestias vitae aut voluptas hic tenetur veniam expedita pariatur amet debitis ipsam libero, nostrum beatae aspernatur recusandae earum. A officiis suscipit doloribus iure pariatur fugit asperiores tempore impedit provident inventore, voluptate, temporibus eum. Optio, provident? Vel libero expedita, atque ex neque eveniet iste, autem illum, deleniti iure quod unde amet et eius nisi. Veritatis, cum. Vero?
+            </p>
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis earum tempore impedit. Cumque quos ducimus ipsa veniam quia, perspiciatis, iure quis corrupti minima voluptas accusamus ratione quas voluptatum iste aliquid dolorum natus numquam a? Saepe expedita quis in harum illo provident eos iusto accusantium accusamus necessitatibus! Ipsam fugit doloremque velit odio, explicabo ut, atque soluta voluptatibus earum tenetur itaque illo impedit magnam obcaecati rerum unde saepe modi provident placeat! Debitis, asperiores quae! Porro, possimus voluptatibus adipisci iusto unde suscipit incidunt eius ex, voluptates pariatur consequatur sint totam quia necessitatibus dolores vero autem molestias tenetur recusandae quidem ducimus, quos omnis exercitationem quis. Quo consequuntur voluptatem esse, eum corrupti vitae nostrum quibusdam neque quam dolorum nobis suscipit laborum, architecto libero sed repellendus alias repudiandae! Voluptas autem aliquam laboriosam cum minima explicabo ex molestiae tenetur fuga dolore deleniti magni, voluptatibus possimus. Officiis vel labore, quisquam dicta nulla molestias vitae aut voluptas hic tenetur veniam expedita pariatur amet debitis ipsam libero, nostrum beatae aspernatur recusandae earum. A officiis suscipit doloribus iure pariatur fugit asperiores tempore impedit provident inventore, voluptate, temporibus eum. Optio, provident? Vel libero expedita, atque ex neque eveniet iste, autem illum, deleniti iure quod unde amet et eius nisi. Veritatis, cum. Vero?
+            </p>
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis earum tempore impedit. Cumque quos ducimus ipsa veniam quia, perspiciatis, iure quis corrupti minima voluptas accusamus ratione quas voluptatum iste aliquid dolorum natus numquam a? Saepe expedita quis in harum illo provident eos iusto accusantium accusamus necessitatibus! Ipsam fugit doloremque velit odio, explicabo ut, atque soluta voluptatibus earum tenetur itaque illo impedit magnam obcaecati rerum unde saepe modi provident placeat! Debitis, asperiores quae! Porro, possimus voluptatibus adipisci iusto unde suscipit incidunt eius ex, voluptates pariatur consequatur sint totam quia necessitatibus dolores vero autem molestias tenetur recusandae quidem ducimus, quos omnis exercitationem quis. Quo consequuntur voluptatem esse, eum corrupti vitae nostrum quibusdam neque quam dolorum nobis suscipit laborum, architecto libero sed repellendus alias repudiandae! Voluptas autem aliquam laboriosam cum minima explicabo ex molestiae tenetur fuga dolore deleniti magni, voluptatibus possimus. Officiis vel labore, quisquam dicta nulla molestias vitae aut voluptas hic tenetur veniam expedita pariatur amet debitis ipsam libero, nostrum beatae aspernatur recusandae earum. A officiis suscipit doloribus iure pariatur fugit asperiores tempore impedit provident inventore, voluptate, temporibus eum. Optio, provident? Vel libero expedita, atque ex neque eveniet iste, autem illum, deleniti iure quod unde amet et eius nisi. Veritatis, cum. Vero?
+            </p>
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis earum tempore impedit. Cumque quos ducimus ipsa veniam quia, perspiciatis, iure quis corrupti minima voluptas accusamus ratione quas voluptatum iste aliquid dolorum natus numquam a? Saepe expedita quis in harum illo provident eos iusto accusantium accusamus necessitatibus! Ipsam fugit doloremque velit odio, explicabo ut, atque soluta voluptatibus earum tenetur itaque illo impedit magnam obcaecati rerum unde saepe modi provident placeat! Debitis, asperiores quae! Porro, possimus voluptatibus adipisci iusto unde suscipit incidunt eius ex, voluptates pariatur consequatur sint totam quia necessitatibus dolores vero autem molestias tenetur recusandae quidem ducimus, quos omnis exercitationem quis. Quo consequuntur voluptatem esse, eum corrupti vitae nostrum quibusdam neque quam dolorum nobis suscipit laborum, architecto libero sed repellendus alias repudiandae! Voluptas autem aliquam laboriosam cum minima explicabo ex molestiae tenetur fuga dolore deleniti magni, voluptatibus possimus. Officiis vel labore, quisquam dicta nulla molestias vitae aut voluptas hic tenetur veniam expedita pariatur amet debitis ipsam libero, nostrum beatae aspernatur recusandae earum. A officiis suscipit doloribus iure pariatur fugit asperiores tempore impedit provident inventore, voluptate, temporibus eum. Optio, provident? Vel libero expedita, atque ex neque eveniet iste, autem illum, deleniti iure quod unde amet et eius nisi. Veritatis, cum. Vero?
+            </p>
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis earum tempore impedit. Cumque quos ducimus ipsa veniam quia, perspiciatis, iure quis corrupti minima voluptas accusamus ratione quas voluptatum iste aliquid dolorum natus numquam a? Saepe expedita quis in harum illo provident eos iusto accusantium accusamus necessitatibus! Ipsam fugit doloremque velit odio, explicabo ut, atque soluta voluptatibus earum tenetur itaque illo impedit magnam obcaecati rerum unde saepe modi provident placeat! Debitis, asperiores quae! Porro, possimus voluptatibus adipisci iusto unde suscipit incidunt eius ex, voluptates pariatur consequatur sint totam quia necessitatibus dolores vero autem molestias tenetur recusandae quidem ducimus, quos omnis exercitationem quis. Quo consequuntur voluptatem esse, eum corrupti vitae nostrum quibusdam neque quam dolorum nobis suscipit laborum, architecto libero sed repellendus alias repudiandae! Voluptas autem aliquam laboriosam cum minima explicabo ex molestiae tenetur fuga dolore deleniti magni, voluptatibus possimus. Officiis vel labore, quisquam dicta nulla molestias vitae aut voluptas hic tenetur veniam expedita pariatur amet debitis ipsam libero, nostrum beatae aspernatur recusandae earum. A officiis suscipit doloribus iure pariatur fugit asperiores tempore impedit provident inventore, voluptate, temporibus eum. Optio, provident? Vel libero expedita, atque ex neque eveniet iste, autem illum, deleniti iure quod unde amet et eius nisi. Veritatis, cum. Vero?
+            </p>
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis earum tempore impedit. Cumque quos ducimus ipsa veniam quia, perspiciatis, iure quis corrupti minima voluptas accusamus ratione quas voluptatum iste aliquid dolorum natus numquam a? Saepe expedita quis in harum illo provident eos iusto accusantium accusamus necessitatibus! Ipsam fugit doloremque velit odio, explicabo ut, atque soluta voluptatibus earum tenetur itaque illo impedit magnam obcaecati rerum unde saepe modi provident placeat! Debitis, asperiores quae! Porro, possimus voluptatibus adipisci iusto unde suscipit incidunt eius ex, voluptates pariatur consequatur sint totam quia necessitatibus dolores vero autem molestias tenetur recusandae quidem ducimus, quos omnis exercitationem quis. Quo consequuntur voluptatem esse, eum corrupti vitae nostrum quibusdam neque quam dolorum nobis suscipit laborum, architecto libero sed repellendus alias repudiandae! Voluptas autem aliquam laboriosam cum minima explicabo ex molestiae tenetur fuga dolore deleniti magni, voluptatibus possimus. Officiis vel labore, quisquam dicta nulla molestias vitae aut voluptas hic tenetur veniam expedita pariatur amet debitis ipsam libero, nostrum beatae aspernatur recusandae earum. A officiis suscipit doloribus iure pariatur fugit asperiores tempore impedit provident inventore, voluptate, temporibus eum. Optio, provident? Vel libero expedita, atque ex neque eveniet iste, autem illum, deleniti iure quod unde amet et eius nisi. Veritatis, cum. Vero?
+            </p>
+        </div>
+    </center>
+    <form id="form">
+        <label for="">maxGap=</label> <input type="text" class="form-input" id="maxGap"> <br>
+        <label for="">scrollGap=</label> <input type="text" class="form-input" id="scrollGap"> <br>
+        <label for="">zigzagCount=</label> <input type="text" class="form-input" id="zigzagCount"> <br> <br>
+        <div style="text-align: right;">
+            <button style="font-size: 1em;" type="button" id="apply">APPLY</button>
+        </div>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
